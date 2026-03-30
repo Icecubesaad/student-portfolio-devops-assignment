@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Categories</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .clubs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .club-card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border-top: 5px solid #2563eb;
+    }
+
+    .club-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .club-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .club-card h3 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .club-card p {
+      color: #555;
+      margin-bottom: 14px;
+    }
+
+    .club-card ul {
+      padding-left: 18px;
+      color: #444;
+    }
+
+    .club-card ul li {
+      margin-bottom: 8px;
+    }
+
+    .join-btn {
+      display: inline-block;
+      margin-top: 16px;
+      text-decoration: none;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .join-btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Club Categories</h1>
+    <p>Explore different types of clubs and join the one that matches your passion, talent, and future goals.</p>
+  </header>
+
+  <main class="container">
+    <div class="section-title">
+      <h2>Our Different Club Types</h2>
+      <p>Choose from technical, creative, sports, social, and academic communities.</p>
+    </div>
+
+    <div class="clubs-grid">
+      <div class="club-card">
+        <div class="club-icon">💻</div>
+        <h3>Technology Club</h3>
+        <p>For students interested in coding, robotics, development, AI, and innovation.</p>
+        <ul>
+          <li>Web Development</li>
+          <li>Programming Contests</li>
+          <li>Robotics Projects</li>
+          <li>Hackathons</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+
+      <div class="club-card">
+        <div class="club-icon">🎨</div>
+        <h3>Arts & Design Club</h3>
+        <p>A space for creativity through painting, graphic design, photography, and visual storytelling.</p>
+        <ul>
+          <li>Sketching & Painting</li>
+          <li>Poster Design</li>
+          <li>Photography Events</li>
+          <li>Creative Workshops</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+
+      <div class="club-card">
+        <div class="club-icon">⚽</div>
+        <h3>Sports Club</h3>
+        <p>Encourages fitness, teamwork, and healthy competition in multiple sports activities.</p>
+        <ul>
+          <li>Football</li>
+          <li>Cricket</li>
+          <li>Badminton</li>
+          <li>Fitness Sessions</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+
+      <div class="club-card">
+        <div class="club-icon">📚</div>
+        <h3>Academic Club</h3>
+        <p>Supports learning, discussions, quizzes, and skill-building for academic excellence.</p>
+        <ul>
+          <li>Book Reading</li>
+          <li>Quiz Competitions</li>
+          <li>Study Circles</li>
+          <li>Seminars</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+
+      <div class="club-card">
+        <div class="club-icon">🌍</div>
+        <h3>Social Service Club</h3>
+        <p>Focused on community work, volunteering, awareness campaigns, and social impact.</p>
+        <ul>
+          <li>Charity Drives</li>
+          <li>Community Support</li>
+          <li>Awareness Campaigns</li>
+          <li>Volunteer Programs</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+
+      <div class="club-card">
+        <div class="club-icon">🎤</div>
+        <h3>Media & Communication Club</h3>
+        <p>For students who enjoy public speaking, content creation, event hosting, and media coverage.</p>
+        <ul>
+          <li>Debates</li>
+          <li>Anchoring</li>
+          <li>Podcasting</li>
+          <li>Event Reporting</li>
+        </ul>
+        <a href="#" class="join-btn">Join Club</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Club Categories Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
