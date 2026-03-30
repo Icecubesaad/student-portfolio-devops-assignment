@@ -182,7 +182,7 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
+    <!-- Mobile Menu Scripts -->
     <script>
         // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
@@ -191,6 +191,13 @@
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+        });
+
+        hamburger.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            }
         });
 
         // Close menu when clicking on a link
